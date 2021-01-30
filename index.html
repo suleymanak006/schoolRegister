@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okul Kayit Sistemi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <header id="baslik">School Register System</header>
+    </div>
+    <main>
+        <div class="birim2 birim">
+            <form id="kullaniciForm" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Your Name"
+                            value="" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">Surname</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Your Surname"
+                            value="" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">Age</label>
+                        <input type="number" class="form-control" id="validationCustom04" placeholder="Enter Your Age"
+                            required>
+                        <div class="invalid-feedback">
+                            Please enter valid number.
+                        </div>
+                    </div>
+                    
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Do you approve user information??
+                        </label>
+                        <div class="invalid-feedback">
+                            You have to check the box before confirming.
+                        </div>
+                    </div>
+                </div>
+                <button class="kaydet btn btn-primary " type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+        <div id="studentList" class="birim">
+            <table class="OgrenciListBaslik">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Surname</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="ogrenciListesi">
+                </tbody>
+            </table>
+        </div>
+        <div class="toplam">Total Number of Students : <p class="deger"></p>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
